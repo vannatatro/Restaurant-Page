@@ -1,4 +1,5 @@
 import "./style.css";
+import homePic from "../images/restuarant-image.jpeg" ;
 
 let content = document.getElementById('content');
 
@@ -19,7 +20,7 @@ function loadHome() {
     let name_photo = document.createElement('div');
     name_photo.classList.add('name-photo');
     let home_photo = document.createElement('img');
-    home_photo.src = "../images/restuarant-image.jpeg";
+    home_photo.src = homePic;
 
     let namePhotoTopDiv = document.createElement('div');
     namePhotoTopDiv.classList.add('name-photo-top-div');
@@ -41,9 +42,6 @@ homeButton.addEventListener('click', (e) => {
     e.preventDefault;
     loadHome()
 })
-
-
-
 
 // menu
 
