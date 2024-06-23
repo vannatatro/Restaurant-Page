@@ -18,6 +18,19 @@ module: {
       test: /\.css$/i,
       use: ["style-loader", "css-loader"],
     },
+    {
+      test: /\.(eot|svg|ttf|woff|woff2)$/,
+      use: [
+        {
+          loader: 'file-loader',
+          options: {}  
+        }
+      ]
+    },
+    {
+      test: /\.(png|jpg|jpeg|gif)$/,
+      loader: 'file-loader'
+    }
   ],
 }
 };
