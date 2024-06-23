@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+* {
+    font-family: Inter;
+    padding: 0px;
+    margin: 0px;
+    --photo-width: calc(100vw - 265px);
+    overflow: overlay;
+}
+
+/* side margins */
+/* header,
+.name-and-photo,
+.menu-middle,
+.about-middle,
+footer {
+    margin-left: 125px;
+    margin-right: 125px;
+    font-weight: 300;
+} */
+header,
+#content,
+footer {
+    margin-left: 125px;
+    margin-right: 125px;
+    font-weight: 300;
+}
+/* header */
+header {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 16px;
+}
+
+header,
+.page-names {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.page-names {
+    gap: 75px;
+    font-size: 18px;
+}
+.page-names nav {
+    font-weight: 300;
+}
+
+.page-names nav:hover {
+    cursor: pointer;
+}
+
+.restaurant-header-name {
+    font-weight: 400;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    padding: 10px;
+    border: solid;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(47, 47, 47);
+}
+
+/* home */
+.name-and-photo {
+    position: relative;
+}
+.name-photo img {
+    width: var(--photo-width);
+    border-radius: 15px;
+}
+
+.name-photo-top-div {
+    position: absolute;
+    top: 100px;
+    right: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.name-photo-top-div h1{
+    font-weight: bold;
+    color: white;
+    font-size: 54px;
+}
+
+/* menu */
+.menu-middle {
+    display: flex;
+}
+
+.menu-item {
+    border: black solid 1px;
+    border-radius: 12px;
+    height: 250px;
+    width: 250px;
+    display: flex;
+    flex-direction:column;
+}
+
+.appetizers,
+.entrees,
+.desserts {
+    margin-left: 20px;
+    margin-bottom: 35px;
+}
+
+.appetizers div,
+.entrees div,
+.desserts div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.appetizers h2,
+.entrees h2,
+.desserts h2 {
+    font-size: 36px;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+/* about */
+
+.about-middle h1 {
+    font-size: 48px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.picture-and-about {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 35px;
+    border-bottom: solid black 1px;
+    margin-bottom: 35px;
+}
+
+.picture-and-about img {
+    width: 575px;
+    border-radius: 12px;
+}
+
+.about-us-text {
+    font-size: 24px;
+    line-break: normal;
+    padding: 30px;
+    width: 505px ;
+}
+
+.contact-us {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 18px;
+}
+
+.contact-us h2 {
+    font-weight: 200;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.hours {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    gap: 5px;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+/* footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    border-top: solid black;
+    padding-top: 35px;
+    margin-top: 35px;
+}
+.footer-address {
+    margin-left: 10px;
+}
+
+.footer-right {
+    display: flex;
+    gap: 75px;
+}
+.socials {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.socials-h2 {
+    grid-area: 1/1/2/3;
+}
+.socials img {
+    height: 25px;
+    justify-self: flex-end;
+}
+
+.get-in-touch div,
+.deals div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 10px;
+    margin-top: 10px;
+
+}
