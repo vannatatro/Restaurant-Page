@@ -1,5 +1,6 @@
 import "./style.css";
 import homePic from "../images/restuarant-image.jpeg" ;
+import aboutPic from "../images/about.jpeg";
 
 let content = document.getElementById('content');
 
@@ -158,7 +159,7 @@ function loadAbout() {
     about_middle.append(pictureAndAbout)
 
     let aboutImg = document.createElement('img')
-    aboutImg.src = "../images/about.jpeg"
+    aboutImg.src = aboutPic;
     pictureAndAbout.append(aboutImg)
 
     let aboutText = document.createElement('div')

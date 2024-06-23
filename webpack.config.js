@@ -23,7 +23,6 @@ module: {
       use: [
         {
           loader: 'file-loader',
-          options: {}  
         }
       ]
     },
@@ -31,6 +30,7 @@ module: {
       test: /\.(png|jpg|jpeg|gif)$/,
       loader: 'file-loader'
     }
+
   ],
 }
 };
